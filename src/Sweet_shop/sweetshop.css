@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#outer
+{
+    height:auto;
+    width: 100vw;
+    background-color: aquamarine;
+}
+#inner
+{
+    height: 620px;
+    width: 100%;
+    padding-top: 10%;
+    background-color: blue;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-image: url("https://t4.ftcdn.net/jpg/00/64/34/41/360_F_64344122_VyUU1ZDESZkKmrkh1WK6HE4kgyH8oK4A.jpg");
+}
+#signup
+{
+    padding-top:1%;
+    height:75%;
+    width: 25%;
+    background-color:#000000ab;
+    margin: auto;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.signupBlock{
+    display: block;
+}
+.signupnone
+{
+    display: none;
+}
+#signup>p{
+   
+    font-size: 14px;
+}
+#signup>p>a{
+    color: white;
+}
+#signup>input{
+    height: 9%;
+    border: none;
+    width: 65%;
+    margin-top: 7%;
+    padding-left: 17px;
+    border-radius: 20px;
+    color: black;
+}
+#btnCreate
+{
+    margin-top: 7%;
+    height: 9%;
+    width: 50%;
+    font-size: 17px;
+    border-radius: 22px;
+    border: none;
+    background-color: #e53f3f;
+    color: white;
+}
+#Login
+{
+    padding-top:1%;
+    height:70%;
+    width: 25%;
+    background-color:#000000ab;
+    margin: auto;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.loginBlock{
+    display: block;
+}
+.loginnone
+{
+    display: none;
+}
+#Login>p{
+   
+    font-size: 14px;
+}
+#Login>p>a{
+    color: white;
+}
+#Login>input{
+    height: 10%;
+    border: none;
+    width: 70%;
+    margin-bottom: 1%;
+    margin-top: 8%;
+    color:black;
+    padding-left: 17px;
+    border-radius: 20px;
+}
+#btnLogin
+{
+    margin-top: 10%;
+    height: 11%;
+    width: 50%;
+    font-size: 17px;
+    border-radius: 22px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #e53f3f;
+    color: white;
+}
+#homeouter
+{
+    height: auto;
+    width: 100%;
+}
+#navouter
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    
+    background-color: #e3820a;
+}
+#divlogo{
+    height: 100%;
+    width: 20%;
+    /* background-color: #e53f3f; */
+}
+#logo_sweet
+{
+    height: 100px;
+    width: 130px; 
+}
+#searchdiv{
+    height: 100%;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+#inpsearch{
+    height: 32%;
+    width: 64%;
+    margin-top: 5%;
+}
+#btnsearch
+{
+    height: 32%;
+    width: 20%;
+    margin-top: 5%;
+    border: none;
+    background-color: orange;
+
+}
+#menubar
+{
+    height: 59%;
+    width: 40%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color:white;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+#productouter{
+    height: 500px;
+    width: 100%;
+    background-color: #e3820a;
+}
+.hidden{
+    height: 0 !important;
+    visibility: hidden;
+    overflow: hidden;
+}
+#container_slide {
+    padding: 0 !important;
+    margin-top: -20px!important;
+}
