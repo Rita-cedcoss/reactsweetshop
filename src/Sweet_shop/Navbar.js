@@ -11,6 +11,7 @@ function Navbar() {
             document.getElementById("contactus").setAttribute("class","hidden");
             document.getElementById("carts").setAttribute("class","hidden");
             document.getElementById("aboutus").setAttribute("class","hidden");
+            document.getElementById("proddescp").setAttribute("class","hidden");
               document.getElementById("slide").removeAttribute("class");
            
         } 

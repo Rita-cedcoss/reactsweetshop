@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import './sweetshop.css'
+// import './sweetshop.css'
+import './sweetsshop.css'
 let arrSignup=[];
 function SignupLogin(props) {
     const[arrUser,setArruser]=useState();

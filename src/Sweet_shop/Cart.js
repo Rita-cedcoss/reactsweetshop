@@ -1,9 +1,34 @@
 import React from 'react'
 
-function Cart() {
-  return (
-    <div id="carts" className='hidden'>Cart</div>
+export default function Cart(props) {
+  // return(<p>helo</p>)
+  
+    return(
+    props.cartarr===undefined? <div>NO Data </div>:
+    
+    props.cartarr.map(
+      (element) => {
+          return (
+            <div>
+              <ul type="disc">
+                  <li style={{ 
+                      fontWeight: 'bold', 
+                      color: 'red' }}
+                  >
+                      {element.id1}
+                  </li>
+                  <li>{element.id2}</li>
+              </ul>
+              </div>
+              
+              
+          )
+          
+    
+    
+    
+   }
   )
+    )
 }
 
-export default Cart
