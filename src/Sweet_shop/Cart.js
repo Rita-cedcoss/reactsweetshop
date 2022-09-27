@@ -1,34 +1,34 @@
 import React from 'react'
-
-export default function Cart(props) {
-  // return(<p>helo</p>)
-  
+export default function Cart(props) { 
+  // return(<>
+  // <p>sfdfsgdstyg</p>
+  // </>)
+  if(props.arrCart.length>0){  
+    console.log(props.arrCart[0].id);
     return(
-    props.cartarr===undefined? <div>NO Data </div>:
+      // <div>cart</div>
+    // props.cartarr===undefined? <div>NO Data </div>: <>\
     
-    props.cartarr.map(
+    <div id="cartid" className='hidden'>
+      <table>
+        <th>Product Id</th><th>Product Image</th><th>Product Name</th><th>Product Price</th><th>Product Quantity</th><th>Action</th>
+      {
+      // <tr><th>Id</th><th>Ptoduct Image</th><th>Product Name</th><th>Product Price </th></tr>
+    props.arrCart.map(
       (element) => {
           return (
-            <div>
-              <ul type="disc">
-                  <li style={{ 
-                      fontWeight: 'bold', 
-                      color: 'red' }}
-                  >
-                      {element.id1}
-                  </li>
-                  <li>{element.id2}</li>
-              </ul>
-              </div>
-              
-              
-          )
-          
-    
-    
-    
+            <>
+                <tr><td>{element.id}</td><td><img id="cartimg" src={element.image} alt=""/></td><td>{element.productname}</td><td>{element.id}</td><td> <button className='btnIncdec' >-</button><input  type="number" value={element.prodquantity} className='quantIncdec'/><button  className='btnIncdec'>+</button></td><td>{element.id}</td></tr>
+            {/* </table> */}
+            </>    
+          )  
    }
-  )
+  )}
+  </table>
+  </div>
+
     )
+  }
+
 }
 
