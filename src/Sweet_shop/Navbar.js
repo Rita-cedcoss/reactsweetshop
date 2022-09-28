@@ -10,22 +10,30 @@ function Navbar() {
             document.getElementById("slide").removeAttribute("class");
             document.getElementById("productouter").removeAttribute("class");
             document.getElementById("proddescp").setAttribute("class","hidden");
+            document.getElementById("cartid").setAttribute("class","hidden");
+            document.getElementById("aboutus").setAttribute("class","hidden");
+            document.getElementById("contactus").setAttribute("class","hidden");
+
             
         } 
         else if(value==="contact"){
-            // document.getElementById("contactus").removeAttribute("class");
-            // document.getElementById("carts").setAttribute("class","hidden");
-            // document.getElementById("aboutus").setAttribute("class","hidden");
-            // document.getElementById("slide").setAttribute("class","hidden");
-            // document.getElementById("productouter").setAttribute("class","hidden");
+            document.getElementById("contactus").removeAttribute("class");
+            document.getElementById("aboutus").setAttribute("class","hidden");
+            document.getElementById("slide").setAttribute("class","hidden");
+            document.getElementById("productouter").setAttribute("class","hidden");
+            document.getElementById("proddescp").setAttribute("class","hidden");
+            document.getElementById("cartid").setAttribute("class","hidden");
+          
+            
         }
         else if(value==="about")
         {
-            // document.getElementById("aboutus").removeAttribute("class");
-            // // document.getElementById("carts").setAttribute("class","hidden");
-            // document.getElementById("contactus").setAttribute("class","hidden");
-            // document.getElementById("slide").setAttribute("class","hidden");
-            // document.getElementById("productouter").setAttribute("class","hidden");  
+            document.getElementById("aboutus").removeAttribute("class");
+            document.getElementById("contactus").setAttribute("class","hidden");
+               document.getElementById("slide").setAttribute("class","hidden");
+               document.getElementById("productouter").setAttribute("class","hidden");  
+               document.getElementById("proddescp").setAttribute("class","hidden");
+               document.getElementById("cartid").setAttribute("class","hidden");
         }
         else if(value==="cart")
         {
@@ -33,11 +41,8 @@ function Navbar() {
             document.getElementById("proddescp").setAttribute("class","hidden");
             document.getElementById("slide").setAttribute("class","hidden");
             document.getElementById("productouter").setAttribute("class","hidden");
-            document.getElementById("proddescp").setAttribute("class","hidden");
-            // document.getElementById("aboutus").setAttribute("class","hidden");
-            // document.getElementById("contactus").setAttribute("class","hidden");
-            // document.getElementById("slide").setAttribute("class","hidden");
-            // document.getElementById("productouter").setAttribute("class","hidden");
+            document.getElementById("aboutus").setAttribute("class","hidden");
+            document.getElementById("contactus").setAttribute("class","hidden");
         }
        
     }
@@ -47,17 +52,16 @@ function Navbar() {
     <div id="navouter">
         <div id="divlogo"><img id="logo_sweet" src='sweetslogo3.png' alt=''></img></div>
         <div id="searchdiv">
-            {/* <input id="inpsearch" type="text"></input><button id="btnsearch">Search</button> */}
+            <h1>Indian Sweet Shop</h1>
             </div>
         <div id="menubar">
             <a onClick={clickmenu} id="home" className='anchornav'>Home</a>
             <a onClick={clickmenu} id="cart" className='anchornav'>Cart</a>
-            {/* <a onClick={clickmenu} id="about">About us</a>  */}
-            {/* <a onClick={clickmenu} id="contact">Contact us</a> */}
+            <a onClick={clickmenu} id="about">About us</a> 
+            <a onClick={clickmenu} id="contact">Contact us</a>
             
         </div>
     </div>
-   {/* <Abouts></Abouts> */}
     </>
   )
 }

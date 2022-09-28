@@ -7,7 +7,7 @@ function Home() {
     <>
     <div id="homeouter">
     <Slidercomp></Slidercomp>
-    {/* <Product></Product> */}
+    
     </div>
     </>
   )

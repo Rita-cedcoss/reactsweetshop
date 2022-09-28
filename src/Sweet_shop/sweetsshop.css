@@ -127,8 +127,7 @@
 }
 #divlogo{
     height: 100%;
-    width: 20%;
-    /* background-color: #e53f3f; */
+    width: 10%;
 }
 #logo_sweet
 {
@@ -139,8 +138,6 @@
     height: 100%;
     width: 50%; 
     display: flex;
-    justify-content: center;
-    /* background-color: red; */
 }
 #inpsearch{
     height: 32%;
@@ -161,23 +158,23 @@
     height: 59%;
     width: 40%;
     padding-top: 3%;
-    padding-left: 3%;
     padding-right: 3%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 a{
     color:white;
     font-size: 18px;
+    font-family: ui-sans-serif;
 }
 a:hover{
     text-decoration: none;
     color: white;
+    font-family: ui-sans-serif;
 }
 #productouter{
     height: auto;
     width: 100%;
-    /* background-color: #e3820a; */
 }
 .hidden{
     height: 0 !important;
@@ -197,9 +194,7 @@ a:hover{
         margin-bottom: 2%;
     grid-template-rows:22% 22% 22% 22% ;
     grid-template-columns: 18% 18% 18% 18%;
-    /* background-color: red; */
     justify-content: center;
-        /* margin: auto; */
     row-gap: 4%;
     column-gap: 5%;
 }
@@ -240,7 +235,6 @@ a:hover{
     width: 96%;
     margin: 2%;
     border: 2px solid #e1b068;
-    /* background-color: #e3820a; */
     display: flex;
 }
 #divDispimg
@@ -248,7 +242,6 @@ a:hover{
     height: 100%;
     width: 30%;
     border-right: 2px solid #b7843a;
-    /* background-color: #e53f3f; */
 }
 #divDispCart
 {
@@ -268,20 +261,16 @@ a:hover{
     font-size: 18px;
     border: none;
     width: 30px;
-    /* background: none; */
+    background: none;
 }
 .quantIncdec
 {
     
-    height: 40px;
+    height: 26px;
     text-align: center;
     width: 50px;
+    background: none;
     padding-bottom: -25px;
-    /* margin-bottom: -5%; */
-    /* border: 1px solid red; */
-    /* border-left: none; */
-    /* border-right: none; */
-    /* border: 1px solid; */
     border: none;
     font-size: 18px;
 }
@@ -309,8 +298,6 @@ table, td, th {
   
   table {
     width: 100%;
-   
-    /* border-collapse: collapse; */
   }
   #cartimg{
     height:40px;
@@ -321,9 +308,48 @@ table, td, th {
   #cartid
   {
     height: auto;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    padding: 5%;
+    background-color: #8b1717;
+    color: white;
   }
   .anchornav{
     padding-right: 20px;
+  }
+  h1{
+    margin-top: 5%;
+    color: white;
+    font-family: ui-sans-serif;
+  }
+  #aboutus
+  {
+    height: 550px;
+    width: 100%;
+    padding: 5%;
+    background-color: #8b1717;
+
+  }
+  .about_top
+  {
+    height: 400px;
+    width: 96%;
+    text-align: justify;
+    padding: 4%;
+    background-color: #eb5c46;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+    margin: auto;
+    color: white;
+  }
+  #contactus
+  {
+    height: 550px;
+    width: 100%;
+    padding: 5%;
+    background-color: #8b1717;
+    color: white;
+  }
+  #remove
+  {
+    background: none;
+    border: none;
   }
